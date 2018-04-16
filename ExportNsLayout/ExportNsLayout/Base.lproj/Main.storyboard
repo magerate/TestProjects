@@ -32,7 +32,7 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Adaptive Single View"/>
                                 <connections>
-                                    <segue destination="dUh-mx-Cbm" kind="push" id="vBG-l0-h2w"/>
+                                    <segue destination="dUh-mx-Cbm" kind="modal" id="vBG-l0-h2w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peY-W0-g1c">
@@ -114,26 +114,26 @@
             </objects>
             <point key="canvasLocation" x="3745" y="-904"/>
         </scene>
-        <!--View Controller-->
+        <!--Adaptive View Controller-->
         <scene sceneID="fbK-Z2-Vfm">
             <objects>
-                <viewController id="dUh-mx-Cbm" sceneMemberID="viewController">
+                <viewController id="dUh-mx-Cbm" customClass="AdaptiveViewController" customModule="ExportNsLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="beN-dU-3ag">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79f-zk-grf">
-                                <rect key="frame" x="0.0" y="84" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="619"/>
                                 <color key="backgroundColor" red="0.1987007949513373" green="0.091370936192418983" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="79f-zk-grf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="beN-dU-3ag" secondAttribute="top" constant="20" id="5dC-kM-ZpP"/>
-                            <constraint firstAttribute="trailing" secondItem="79f-zk-grf" secondAttribute="trailing" id="Alo-fm-k0C"/>
-                            <constraint firstItem="79f-zk-grf" firstAttribute="leading" secondItem="beN-dU-3ag" secondAttribute="leading" id="bAx-dk-bfz"/>
-                            <constraint firstAttribute="bottom" secondItem="79f-zk-grf" secondAttribute="bottom" constant="20" id="sZv-RY-7og"/>
-                            <constraint firstItem="79f-zk-grf" firstAttribute="top" secondItem="I6l-F7-F9a" secondAttribute="top" priority="250" constant="20" id="xld-4f-nAP"/>
+                            <constraint firstItem="I6l-F7-F9a" firstAttribute="trailing" secondItem="79f-zk-grf" secondAttribute="trailing" id="Alo-fm-k0C"/>
+                            <constraint firstItem="79f-zk-grf" firstAttribute="leading" secondItem="I6l-F7-F9a" secondAttribute="leading" id="bAx-dk-bfz"/>
+                            <constraint firstItem="I6l-F7-F9a" firstAttribute="bottom" secondItem="79f-zk-grf" secondAttribute="bottom" constant="20" id="sZv-RY-7og"/>
+                            <constraint firstItem="79f-zk-grf" firstAttribute="top" secondItem="I6l-F7-F9a" secondAttribute="top" priority="750" constant="8" id="xld-4f-nAP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I6l-F7-F9a"/>
                     </view>

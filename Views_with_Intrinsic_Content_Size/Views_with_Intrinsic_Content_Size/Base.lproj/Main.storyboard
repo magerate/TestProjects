@@ -200,6 +200,14 @@
                                     <segue destination="s7q-Cq-qrI" kind="presentation" id="46o-tY-ZRt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRe-fD-GpX">
+                                <rect key="frame" x="20" y="382" width="335" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Two Buttons with Equal Spacing use layout guide"/>
+                                <connections>
+                                    <segue destination="A05-gA-cey" kind="presentation" id="NU0-by-cOP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -208,6 +216,8 @@
                             <constraint firstItem="OCc-zf-ltq" firstAttribute="trailing" secondItem="8Lp-kt-osh" secondAttribute="trailing" id="4fj-92-bCj"/>
                             <constraint firstItem="i6H-Od-gnj" firstAttribute="top" secondItem="8Lp-kt-osh" secondAttribute="bottom" constant="8" id="6tv-H1-m12"/>
                             <constraint firstItem="Oay-50-n57" firstAttribute="trailing" secondItem="8Lp-kt-osh" secondAttribute="trailing" id="70Y-GO-tGs"/>
+                            <constraint firstItem="VRe-fD-GpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8gb-4g-MS2"/>
+                            <constraint firstItem="VRe-fD-GpX" firstAttribute="top" secondItem="Y0U-be-pUk" secondAttribute="bottom" constant="8" id="9cw-Su-7AR"/>
                             <constraint firstItem="i6H-Od-gnj" firstAttribute="trailing" secondItem="8Lp-kt-osh" secondAttribute="trailing" id="9vb-xd-yx7"/>
                             <constraint firstItem="nxF-hU-1uP" firstAttribute="top" secondItem="YAe-81-oVf" secondAttribute="bottom" constant="8" id="DbK-ae-R5p"/>
                             <constraint firstItem="8Lp-kt-osh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EBJ-Tf-XI5"/>
@@ -222,6 +232,7 @@
                             <constraint firstItem="Y0U-be-pUk" firstAttribute="leading" secondItem="8Lp-kt-osh" secondAttribute="leading" id="Vf5-cS-SqX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Lp-kt-osh" secondAttribute="trailing" constant="20" id="cEe-LC-6eJ"/>
                             <constraint firstItem="i6H-Od-gnj" firstAttribute="leading" secondItem="8Lp-kt-osh" secondAttribute="leading" id="fVA-a9-6RZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VRe-fD-GpX" secondAttribute="trailing" constant="20" id="h3f-xO-kS7"/>
                             <constraint firstItem="OCc-zf-ltq" firstAttribute="leading" secondItem="8Lp-kt-osh" secondAttribute="leading" id="jXz-aD-BvR"/>
                             <constraint firstItem="Y0U-be-pUk" firstAttribute="top" secondItem="nxF-hU-1uP" secondAttribute="bottom" constant="8" id="l7E-yg-EaL"/>
                             <constraint firstItem="nxF-hU-1uP" firstAttribute="leading" secondItem="8Lp-kt-osh" secondAttribute="leading" id="oro-LK-XeO"/>
@@ -237,6 +248,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-47" y="87"/>
+        </scene>
+        <!--Two Button View Conroller-->
+        <scene sceneID="ukb-gb-Y7Q">
+            <objects>
+                <viewController id="A05-gA-cey" customClass="TwoButtonViewConroller" customModule="Views_with_Intrinsic_Content_Size" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tcs-Q4-ts8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T6-y5-FKJ">
+                                <rect key="frame" x="52" y="617" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBz-QE-9bg">
+                                <rect key="frame" x="141" y="617" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Long long long long long button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P2Q-P4-eR5"/>
+                    </view>
+                    <connections>
+                        <outlet property="longButton" destination="MBz-QE-9bg" id="yLn-k4-GUh"/>
+                        <outlet property="shortButton" destination="0T6-y5-FKJ" id="Kpf-nH-I34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KT0-sH-cfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="537"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q74-Ka-VC6">
@@ -303,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRy-Eb-9wH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="238.83058470764618"/>
+            <point key="canvasLocation" x="1562" y="99"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mbe-me-XtN">

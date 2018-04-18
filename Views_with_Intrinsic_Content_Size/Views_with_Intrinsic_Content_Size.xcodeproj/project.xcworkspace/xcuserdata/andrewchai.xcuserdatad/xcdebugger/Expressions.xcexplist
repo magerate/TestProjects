@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TwoButtonViewConroller.viewWillLayoutSubviews():TwoButtonViewConroller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.readableContentGuide.layoutFrame">
+            </PersistentString>
+            <PersistentString
+               value = "view.safeAreaLayoutGuide.layoutFrame">
+            </PersistentString>
+            <PersistentString
+               value = "view.layoutMarginsGuide.layoutFrame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

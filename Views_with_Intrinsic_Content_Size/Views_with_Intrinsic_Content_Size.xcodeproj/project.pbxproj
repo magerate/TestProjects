@@ -13,6 +13,7 @@
 		495A11832080FB9500B4A4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495A11822080FB9500B4A4B7 /* Assets.xcassets */; };
 		495A11862080FB9500B4A4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495A11842080FB9500B4A4B7 /* LaunchScreen.storyboard */; };
 		49D096F720864417007C9680 /* TwoButtonViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D096F620864417007C9680 /* TwoButtonViewConroller.swift */; };
+		F06C134C2087276400B503EF /* ChangeConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C134B2087276400B503EF /* ChangeConstraintViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		495A11852080FB9500B4A4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495A11872080FB9500B4A4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D096F620864417007C9680 /* TwoButtonViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonViewConroller.swift; sourceTree = "<group>"; };
+		F06C134B2087276400B503EF /* ChangeConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeConstraintViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				495A11842080FB9500B4A4B7 /* LaunchScreen.storyboard */,
 				495A11872080FB9500B4A4B7 /* Info.plist */,
 				49D096F620864417007C9680 /* TwoButtonViewConroller.swift */,
+				F06C134B2087276400B503EF /* ChangeConstraintViewController.swift */,
 			);
 			path = Views_with_Intrinsic_Content_Size;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495A117E2080FB9500B4A4B7 /* ViewController.swift in Sources */,
+				F06C134C2087276400B503EF /* ChangeConstraintViewController.swift in Sources */,
 				49D096F720864417007C9680 /* TwoButtonViewConroller.swift in Sources */,
 				495A117C2080FB9500B4A4B7 /* AppDelegate.swift in Sources */,
 			);

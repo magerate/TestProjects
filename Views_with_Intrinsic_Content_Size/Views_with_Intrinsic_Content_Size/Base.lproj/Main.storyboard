@@ -216,6 +216,14 @@
                                     <segue destination="rj9-kG-ner" kind="presentation" id="fTs-ye-0UU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTG-Fn-SAd">
+                                <rect key="frame" x="20" y="458" width="335" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Batch Change"/>
+                                <connections>
+                                    <segue destination="Vxr-AJ-dDM" kind="presentation" id="TCU-B6-6Pu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -230,7 +238,10 @@
                             <constraint firstItem="nxF-hU-1uP" firstAttribute="top" secondItem="YAe-81-oVf" secondAttribute="bottom" constant="8" id="DbK-ae-R5p"/>
                             <constraint firstItem="8Lp-kt-osh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EBJ-Tf-XI5"/>
                             <constraint firstItem="fHf-lj-blf" firstAttribute="trailing" secondItem="8Lp-kt-osh" secondAttribute="trailing" id="Ear-86-2BM"/>
+                            <constraint firstItem="rTG-Fn-SAd" firstAttribute="top" secondItem="igY-nX-WxJ" secondAttribute="bottom" constant="8" id="Gic-jD-OI4"/>
                             <constraint firstItem="Oay-50-n57" firstAttribute="top" secondItem="OCc-zf-ltq" secondAttribute="bottom" constant="8" id="K89-52-7dG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rTG-Fn-SAd" secondAttribute="trailing" constant="20" id="Kmq-OL-k9O"/>
+                            <constraint firstItem="rTG-Fn-SAd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LCr-de-58q"/>
                             <constraint firstItem="fHf-lj-blf" firstAttribute="leading" secondItem="8Lp-kt-osh" secondAttribute="leading" id="Lki-iE-Unz"/>
                             <constraint firstItem="YAe-81-oVf" firstAttribute="top" secondItem="fHf-lj-blf" secondAttribute="bottom" constant="8" id="MWd-iw-j97"/>
                             <constraint firstItem="fHf-lj-blf" firstAttribute="top" secondItem="Oay-50-n57" secondAttribute="bottom" constant="8" id="ODC-M2-O1G"/>
@@ -259,6 +270,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-47" y="87"/>
+        </scene>
+        <!--Batch Change View Controller-->
+        <scene sceneID="z1D-Wo-L6Z">
+            <objects>
+                <viewController id="Vxr-AJ-dDM" customClass="BatchChangeViewController" customModule="Views_with_Intrinsic_Content_Size" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mXj-RD-vFT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmH-JY-1d0">
+                                <rect key="frame" x="50" y="605" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQF-IV-hj2">
+                                <rect key="frame" x="244" y="605" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Long"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1WA-JP-bFr"/>
+                    </view>
+                    <connections>
+                        <outlet property="longButton" destination="JQF-IV-hj2" id="boM-WB-12g"/>
+                        <outlet property="shortButton" destination="JQF-IV-hj2" id="6Vk-DD-4Vo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FD-Es-hgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="681"/>
         </scene>
         <!--Two Button View Conroller-->
         <scene sceneID="ukb-gb-Y7Q">
@@ -328,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtG-HH-Shi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="273"/>
+            <point key="canvasLocation" x="802" y="-195"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q74-Ka-VC6">

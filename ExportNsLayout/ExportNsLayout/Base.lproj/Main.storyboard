@@ -59,16 +59,27 @@
                                     <segue destination="BaT-UY-Dax" kind="push" id="IaD-eh-eTU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpE-ea-4W4">
+                                <rect key="frame" x="20" y="274" width="335" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Conflit constraints"/>
+                                <connections>
+                                    <segue destination="eQg-bT-Bgc" kind="presentation" id="dcb-LI-6nm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cr7-EQ-DSy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1T9-BC-YyX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sv9-Mf-jvS" secondAttribute="trailing" constant="20" id="AW9-uQ-Pt9"/>
                             <constraint firstItem="peY-W0-g1c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cfs-A1-vcU"/>
+                            <constraint firstItem="XpE-ea-4W4" firstAttribute="top" secondItem="GHn-v7-sSD" secondAttribute="bottom" constant="8" id="EhM-U6-ngq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mlj-oI-qK9" secondAttribute="trailing" constant="20" id="Qxs-ZF-G4D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XpE-ea-4W4" secondAttribute="trailing" constant="20" id="SXL-Ch-0BF"/>
                             <constraint firstItem="peY-W0-g1c" firstAttribute="top" secondItem="mlj-oI-qK9" secondAttribute="bottom" constant="8" id="cxu-V2-9DX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GHn-v7-sSD" secondAttribute="trailing" constant="20" id="d4W-Ef-0ax"/>
                             <constraint firstItem="GHn-v7-sSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dS2-Bh-CiT"/>
+                            <constraint firstItem="XpE-ea-4W4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e5z-aR-WIi"/>
                             <constraint firstItem="mlj-oI-qK9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fkD-Td-nCt"/>
                             <constraint firstItem="GHn-v7-sSD" firstAttribute="top" secondItem="sv9-Mf-jvS" secondAttribute="bottom" constant="8" id="gYQ-KB-VNN"/>
                             <constraint firstItem="sv9-Mf-jvS" firstAttribute="top" secondItem="peY-W0-g1c" secondAttribute="bottom" constant="8" id="gun-tU-EUz"/>
@@ -85,6 +96,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1994.4000000000001" y="255.92203898050977"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rih-EG-biy">
+            <objects>
+                <viewController id="eQg-bT-Bgc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vxg-dS-LRm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaV-LU-dbE">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <color key="backgroundColor" red="1" green="0.31992831570000002" blue="0.22211497190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IaV-LU-dbE" firstAttribute="top" secondItem="g4z-Jm-Vmo" secondAttribute="top" constant="20" id="1rY-Dl-zlM"/>
+                            <constraint firstItem="g4z-Jm-Vmo" firstAttribute="bottom" secondItem="IaV-LU-dbE" secondAttribute="bottom" constant="20" id="DGq-Gb-2mt"/>
+                            <constraint firstItem="IaV-LU-dbE" firstAttribute="leading" secondItem="g4z-Jm-Vmo" secondAttribute="leading" constant="30" id="RA2-Km-FWd"/>
+                            <constraint firstItem="IaV-LU-dbE" firstAttribute="leading" secondItem="g4z-Jm-Vmo" secondAttribute="leading" constant="20" id="UeZ-O6-TV4"/>
+                            <constraint firstItem="g4z-Jm-Vmo" firstAttribute="trailing" secondItem="IaV-LU-dbE" secondAttribute="trailing" constant="20" id="YFy-TB-ow7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g4z-Jm-Vmo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgR-Or-Xl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2795" y="114"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fcN-PS-G0e">

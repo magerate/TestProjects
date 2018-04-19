@@ -2,69 +2,41 @@
 //  BatchChangeViewController.swift
 //  Views_with_Intrinsic_Content_Size
 //
-//  Created by Andrew Chai on 4/18/18.
+//  Created by Andrew on 2018/4/19.
 //  Copyright © 2018 Andrew. All rights reserved.
 //
 
 import UIKit
-import Foundation
 
-class BatchChangeViewController: UIViewController {
+class DummyView: UIView {
     
+    override func updateConstraints() {
+        super.updateConstraints()
+        
+        guard let constraint = constraints.first else {return}
+        
+        if constraint.constant <= 150 {
+            constraint.constant *= 2
+        } else {
+            constraint.constant = 100
+        }
+    }
+}
+
+class BatchChange1ViewController: UIViewController {
     
-    @IBOutlet weak var shortButton: UIButton!
-    @IBOutlet weak var longButton: UIButton!
+    @IBOutlet weak var dummyView: DummyView!
     
-    
-    var compactConstraints = [NSLayoutConstraint]()
-    var regularConstraints = [NSLayoutConstraint]()
+    @IBAction func buttonTaped(_ sender: Any) {
+        dummyView.setNeedsUpdateConstraints()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        shortButton.translatesAutoresizingMaskIntoConstraints = false
-        longButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        let safeArea = view.safeAreaLayoutGuide
-        
-        let shortLeading = shortButton.leadingAnchor.constraintEqualToSystemSpacingAfter(safeArea.leadingAnchor, multiplier: 1)
-        let shortTrailingCompact = safeArea.trailingAnchor.constraintEqualToSystemSpacingAfter(shortButton.trailingAnchor, multiplier: 1)
-        
-        let shortBottomCompact = longButton.topAnchor.constraintEqualToSystemSpacingBelow(shortButton.bottomAnchor, multiplier: 1)
-        
-        
-        let longLeadingCompact = longButton.leadingAnchor.constraintEqualToSystemSpacingAfter(safeArea.leadingAnchor, multiplier: 1)
-        let longTrailing = safeArea.trailingAnchor.constraintEqualToSystemSpacingAfter(longButton.trailingAnchor, multiplier: 1)
-        
-        let longBottom = safeArea.bottomAnchor.constraintEqualToSystemSpacingBelow(longButton.bottomAnchor, multiplier: 1)
-        
-        
-        let shortTrailing = longButton.leadingAnchor.constraintEqualToSystemSpacingAfter(shortButton.trailingAnchor, multiplier: 1)
-        let shortBottom = safeArea.bottomAnchor.constraintEqualToSystemSpacingBelow(shortButton.bottomAnchor, multiplier: 1)
-        let width = shortButton.widthAnchor.constraint(equalTo: longButton.widthAnchor)
-        
-        
-        NSLayoutConstraint.activate([
-            shortLeading,
-            longTrailing,
-            longBottom,
-            ])
-        
-        compactConstraints = [shortTrailingCompact, shortBottomCompact, longLeadingCompact ]
-        regularConstraints = [shortTrailing, shortBottom, width]
-        
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        if traitCollection.horizontalSizeClass == .compact {
-            NSLayoutConstraint.deactivate(regularConstraints)
-            NSLayoutConstraint.activate(compactConstraints)
-        } else {
-            NSLayoutConstraint.deactivate(compactConstraints)
-            NSLayoutConstraint.activate(regularConstraints)
-        }
+    override func viewWillLayoutSubviews() {
+        
     }
-    
-    
-   
+
 }

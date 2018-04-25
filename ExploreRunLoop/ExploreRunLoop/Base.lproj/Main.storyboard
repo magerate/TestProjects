@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eek-nX-M3R">
-                                <rect key="frame" x="144" y="271" width="46" height="30"/>
+                                <rect key="frame" x="133" y="271" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="TableView"/>
                                 <connections>
                                     <segue destination="nuf-Hp-YAw" kind="push" id="JQk-mN-8TI"/>
                                 </connections>

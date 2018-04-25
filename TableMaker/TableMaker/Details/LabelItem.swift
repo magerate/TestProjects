@@ -16,7 +16,9 @@ public class LabelItem<T, U, V>: GenericTableItem<T,U,V>{
     }
     
     public override func createCell() -> UITableViewCell {
-        return UITableViewCell(style: .value1, reuseIdentifier: identifier)
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: identifier)
+        cell.selectionStyle = .none
+        return cell
     }
     
     public override func setup(_ tableView: UITableView, cell: UITableViewCell, at indexPath: IndexPath) {

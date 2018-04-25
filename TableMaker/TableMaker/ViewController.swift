@@ -30,10 +30,16 @@ class ViewController: UIViewController {
         item2.title = "Age"
         item2.getter = {$0.age}
         
-        let section = DetailSection()
-        section.items = [item1,item2]
+        let item3 = ButtonItem()
+        item3.title = "Button item"
         
-        let sections = [section]
+        let section1 = DetailSection()
+        section1.items = [item1,item2]
+        
+        let section2 = DetailSection()
+        section2.items = [item3]
+        
+        let sections = [section1, section2]
         
         let viewController = DetailViewController()
         viewController.sections = sections

@@ -13,6 +13,14 @@ import UIKit
 public class DetailViewController: UITableViewController {
     var sections = [DetailSection]()
    
+    public init(){
+        super.init(style: .grouped)
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError()
+    }
+    
     override public func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }

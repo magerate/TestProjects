@@ -13,11 +13,11 @@ public let stringFormatter: (String?) -> String? = {$0}
 
 public class Converter<T, U> {
     public func convert(_ value: T) -> U {
-        fatalError()
+        return value as! U
     }
 
     public func convertBack(_ value: U) -> T? {
-        fatalError()
+        return nil
     }
 }
 

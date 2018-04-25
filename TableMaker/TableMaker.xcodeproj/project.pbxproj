@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49D0900E2090CD1000985E53 /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0900D2090CD1000985E53 /* TableItem.swift */; };
+		49D090102090D7F600985E53 /* ButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0900F2090D7F600985E53 /* ButtonItem.swift */; };
 		F0D500702090420C00B226ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D5006F2090420C00B226ED /* AppDelegate.swift */; };
 		F0D500722090420C00B226ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D500712090420C00B226ED /* ViewController.swift */; };
 		F0D500752090420C00B226ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D500732090420C00B226ED /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		49D0900D2090CD1000985E53 /* TableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
+		49D0900F2090D7F600985E53 /* ButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonItem.swift; sourceTree = "<group>"; };
 		F0D5006C2090420C00B226ED /* TableMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D5006F2090420C00B226ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D500712090420C00B226ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				F0D5008620904FB200B226ED /* LabelItem.swift */,
 				F0D5008C2090621600B226ED /* TableSection.swift */,
 				F0D5008E209062C700B226ED /* DetailViewController.swift */,
+				49D0900F2090D7F600985E53 /* ButtonItem.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				F0D500702090420C00B226ED /* AppDelegate.swift in Sources */,
 				49D0900E2090CD1000985E53 /* TableItem.swift in Sources */,
 				F0D50089209061B600B226ED /* People.swift in Sources */,
+				49D090102090D7F600985E53 /* ButtonItem.swift in Sources */,
 				F0D5008F209062C700B226ED /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         gcdRunloop()
 //        performSelector()
         timerSelector()
+        globalQueue()
         return true
     }
     
@@ -43,6 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func timeFunc(timer: Timer) {
         print(RunLoop.current.currentMode!)
+    }
+    
+    func globalQueue() {
+        DispatchQueue.global().async {
+            print(RunLoop.current.currentMode!)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

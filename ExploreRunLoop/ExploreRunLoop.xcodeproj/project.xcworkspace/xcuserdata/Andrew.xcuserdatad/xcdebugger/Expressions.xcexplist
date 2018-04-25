@@ -11,6 +11,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in AppDelegate.globalQueue():AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "RunLoop.current.currentMode">
+            </PersistentString>
+            <PersistentString
+               value = "RunLoop.current">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TableViewController.scrollViewDidEndDecelerating(_:):TableViewController.swift">
          <PersistentStrings>
             <PersistentString

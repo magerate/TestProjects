@@ -10,14 +10,13 @@ import UIKit
 import Foundation
 
 
-public class LabelItem<T, U, K>: DetailItem<T,U,K>{
-
-    public override var cellId: String {
+public class LabelItem<T, U, V>: GenericTableItem<T,U,V>{
+    public override var identifier: String {
         return "labelCellReuseId"
     }
     
     public override func createCell() -> UITableViewCell {
-        return UITableViewCell(style: .value1, reuseIdentifier: cellId)
+        return UITableViewCell(style: .value1, reuseIdentifier: identifier)
     }
     
     public override func setup(_ tableView: UITableView, cell: UITableViewCell, at indexPath: IndexPath) {
@@ -30,8 +29,8 @@ public class LabelItem2<T,U>: LabelItem<T,U,U>{
 }
 
 public class LabelItem1<T>: LabelItem<T, String?, String?>{
-    public override init(_ data: T, fetcher: ValueFetcher<T,String?>) {
-        super.init(data, fetcher: fetcher)
-        formatter = defaultFormatter
+    public override init(_ data: T) {
+        super.init(data)
+        formatter = stringFormatter
     }
 }

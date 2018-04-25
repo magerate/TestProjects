@@ -13,5 +13,5 @@ public class DetailSection {
     var header: String?
     var footer: String?
     
-    var items = [DetailItemBase]()
+    var items = [TableItem]()
 }

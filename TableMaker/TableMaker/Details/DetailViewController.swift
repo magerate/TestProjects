@@ -27,7 +27,7 @@ public class DetailViewController: UITableViewController {
         let item = ds.items[indexPath.row]
         
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: item.cellId){
+        if let cell = tableView.dequeueReusableCell(withIdentifier: item.identifier){
             item.setup(tableView, cell: cell, at: indexPath)
             return cell
         } else {

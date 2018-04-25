@@ -21,12 +21,14 @@ class ViewController: UIViewController {
         let people = People()
         people.name = "Allen"
         
-        let item1 = LabelItem1(people, fetcher: .closure({$0.name},nil))
+        let item1 = LabelItem1(people)
         item1.title = "Name"
+        item1.getter = {$0.name}
 
         
-        let item2 = LabelItem2(people, fetcher: .closure({$0.age},nil))
+        let item2 = LabelItem2<People, Int>(people)
         item2.title = "Age"
+        item2.getter = {$0.age}
         
         let section = DetailSection()
         section.items = [item1,item2]

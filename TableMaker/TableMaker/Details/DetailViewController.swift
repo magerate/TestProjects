@@ -21,16 +21,16 @@ public class DetailViewController: UITableViewController {
         fatalError()
     }
     
-    override public func numberOfSections(in tableView: UITableView) -> Int {
+    public override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
     
-    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let ds = sections[section]
         return ds.items.count
     }
     
-    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ds = sections[indexPath.section]
         let item = ds.items[indexPath.row]
         
@@ -45,7 +45,9 @@ public class DetailViewController: UITableViewController {
         }
     }
     
-    override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ds = sections[indexPath.section]
+        let item = ds.items[indexPath.row]
+        item.select(tableView, at: indexPath)
     }
 }

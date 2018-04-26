@@ -21,14 +21,11 @@ class ViewController: UIViewController {
         let people = People()
         people.name = "Allen"
         
-        let item1 = LabelItem1(people)
+        let item1 = LabelItem1(people, getter: {$0.name})
         item1.title = "Name"
-        item1.getter = {$0.name}
-
         
-        let item2 = LabelItem2<People, Int>(people)
+        let item2 = LabelItem2(people, getter: {$0.age})
         item2.title = "Age"
-        item2.getter = {$0.age}
         
         let item3 = ButtonItem()
         item3.title = "Button item"

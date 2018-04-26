@@ -31,8 +31,8 @@ public class LabelItem2<T,U>: LabelItem<T,U,U>{
 }
 
 public class LabelItem1<T>: LabelItem<T, String?, String?>{
-    public override init(_ data: T) {
-        super.init(data)
+    public override init(_ data: T, getter: @escaping (T) -> String?) {
+        super.init(data, getter: getter)
         formatter = stringFormatter
     }
 }

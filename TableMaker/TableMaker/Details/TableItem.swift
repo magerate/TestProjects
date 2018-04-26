@@ -1,5 +1,5 @@
 //
-//  DetailItemBase.swift
+//  TableItem.swift
 //  TableMaker
 //
 //  Created by Andrew Chai on 4/25/18.
@@ -20,14 +20,6 @@ public class Converter<T, U> {
         return nil
     }
 }
-
-//public protocol Converter {
-//    associatedtype T
-//    associatedtype U
-//
-//    func convert(_ value: T) -> U
-//    func convertBack(_ value: U) -> T?
-//}
 
 public protocol ItemHost {
     var viewController: UIViewController {get}
@@ -63,38 +55,35 @@ public class DataTableItem<T, U, V>: TableItem{
     public var host: ItemHost?
     
     public var data: T
-    public var getter: ((T) -> U)?
+    public var getter: ((T) -> U)
     public var setter: ((T,U) -> Void)?
     
     public var converter: Converter<U,V>?
     public var formatter: ((V)-> String?)?
     
-    init(_ data: T) {
+    init(_ data: T, getter: @escaping (T) -> U) {
         self.data = data
+        self.getter = getter
     }
     
     public func getValue() -> U {
-        if let getter = getter{
-            return getter(data)
-        }
-        fatalError("Setter of item \(title!) is not set")
+        return getter(data)
     }
     
     public func setValue(_ value: V) {
-        var convertedBackValue: U
-        if let converter = converter {
-            if let cbv = converter.convertBack(value){
-                convertedBackValue = cbv
-            } else {
-                return
+        guard let setter = setter else { return }
+        
+        if let converter = converter{
+            if let cbv = converter.convertBack(value) {
+                doSetValue(setter, cbv)
             }
         } else {
-            convertedBackValue = value as! U
+            doSetValue(setter, value as! U)
         }
-        
-        if let setter = setter {
-            setter(data, convertedBackValue)
-        }
+    }
+    
+    private func doSetValue(_ setter: (T,U) -> Void, _ value: U) {
+        setter(data, value)
     }
     
     public func getConvertedValue() -> V {
@@ -106,10 +95,6 @@ public class DataTableItem<T, U, V>: TableItem{
     }
     
     public func getDescription() -> String?{
-        guard let _ = getter else {
-            return nil
-        }
-        
         guard let formatter = formatter else {
             var s = ""
             print(getConvertedValue(), to: &s)

@@ -39,11 +39,11 @@ public protocol TableItem {
     
     func createCell() -> UITableViewCell
     func setup(_ tableView: UITableView, cell: UITableViewCell, at indexPath: IndexPath)
-    func select()
+    func select(_ tableView: UITableView, at indexPath: IndexPath)
 }
 
 
-public class GenericTableItem<T, U, V>: TableItem{
+public class DataTableItem<T, U, V>: TableItem{
     public var title: String?
     public var identifier: String {
         fatalError("provide valid id")
@@ -56,7 +56,7 @@ public class GenericTableItem<T, U, V>: TableItem{
     public func setup(_ tableView: UITableView, cell: UITableViewCell, at indexPath: IndexPath) {
     }
     
-    public func select() {
+    public func select(_ tableView: UITableView, at indexPath: IndexPath) {
     }
     
     

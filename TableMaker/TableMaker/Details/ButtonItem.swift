@@ -54,7 +54,7 @@ public class ButtonItem: TableItem {
         cell.button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
-    public func select() {
+    public func select(_ tableView: UITableView, at indexPath: IndexPath) {
     }
     
     @objc func buttonTapped() {

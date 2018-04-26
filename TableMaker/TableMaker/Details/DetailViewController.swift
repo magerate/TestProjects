@@ -44,4 +44,8 @@ public class DetailViewController: UITableViewController {
             return cell
         }
     }
+    
+    override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

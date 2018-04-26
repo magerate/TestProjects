@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 
-public class LabelItem<T, U, V>: GenericTableItem<T,U,V>{
+public class LabelItem<T, U, V>: DataTableItem<T,U,V>{
     public override var identifier: String {
         return "labelCellReuseId"
     }

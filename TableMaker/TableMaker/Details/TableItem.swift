@@ -23,6 +23,8 @@ public class Converter<T, U> {
 
 public protocol ItemHost {
     var viewController: UIViewController {get}
+    func valueWillChange(_ tableItem: TableItem)
+    func valueDidChange(_ tableItem: TableItem)
 }
 
 public protocol TableItem {
@@ -35,7 +37,7 @@ public protocol TableItem {
 }
 
 
-public class DataTableItem<T, U, V>: TableItem{
+public class DataTableItem<T, U: Equatable, V>: TableItem{
     public var title: String?
     public var identifier: String {
         fatalError("provide valid id")
@@ -83,7 +85,13 @@ public class DataTableItem<T, U, V>: TableItem{
     }
     
     private func doSetValue(_ setter: (T,U) -> Void, _ value: U) {
+        if getValue() == value {
+            return
+        }
+        
+        host?.valueWillChange(self)
         setter(data, value)
+        host?.valueDidChange(self)
     }
     
     public func getConvertedValue() -> V {

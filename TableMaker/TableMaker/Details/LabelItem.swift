@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 
-public class LabelItem<T, U, V>: DataTableItem<T,U,V>{
+public class LabelItem<T, U: Equatable, V>: DataTableItem<T,U,V>{
     public override var identifier: String {
         return "labelCellReuseId"
     }
@@ -27,7 +27,7 @@ public class LabelItem<T, U, V>: DataTableItem<T,U,V>{
     }
 }
 
-public class LabelItem2<T,U>: LabelItem<T,U,U>{
+public class LabelItem2<T,U: Equatable>: LabelItem<T,U,U>{
 }
 
 public class LabelItem1<T>: LabelItem<T, String?, String?>{

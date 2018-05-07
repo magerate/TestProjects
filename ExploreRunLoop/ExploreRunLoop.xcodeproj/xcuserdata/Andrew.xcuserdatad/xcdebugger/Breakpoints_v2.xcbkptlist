@@ -6,32 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExploreRunLoop/AppDelegate.swift"
-            timestampString = "546279054.491367"
+            filePath = "ExploreRunLoop/ViewController.swift"
+            timestampString = "547397444.749607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ExploreRunLoop/AppDelegate.swift"
-            timestampString = "546279054.491824"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "gcdRunloop()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "gcdMainTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExploreRunLoop/TableViewController.swift"
-            timestampString = "546279054.492126"
+            filePath = "ExploreRunLoop/ViewController.swift"
+            timestampString = "547397444.75028"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "scrollViewDidEndDecelerating(_:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "testSelector()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,14 +41,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExploreRunLoop/AppDelegate.swift"
-            timestampString = "546279054.492188"
+            filePath = "ExploreRunLoop/ViewController.swift"
+            timestampString = "547397444.750618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "globalQueue()"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "timerTapped(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExploreRunLoop/ViewController.swift"
+            timestampString = "547397444.751063"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "globalQueueTaped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExploreRunLoop/ViewController.swift"
+            timestampString = "547397497.356863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "gcdMainTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExploreRunLoop.ViewController.gcdMainTapped(Any) -&gt; ()"
+                  moduleName = "ExploreRunLoop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Andrew/Documents/GitHub/TestProjects/ExploreRunLoop/ExploreRunLoop/ViewController.swift"
+                  timestampString = "547397497.467075"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in ExploreRunLoop.ViewController.gcdMainTapped(Any) -&gt; ()"
+                  moduleName = "ExploreRunLoop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Andrew/Documents/GitHub/TestProjects/ExploreRunLoop/ExploreRunLoop/ViewController.swift"
+                  timestampString = "547397497.4713939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -36,12 +36,37 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupRunLoopObserver()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func gcdMainTapped(_ sender: Any) {
+        DispatchQueue.main.async {
+            print(RunLoop.current.currentMode!)
+        }
+    }
+    @IBAction func performSelectorTaped(_ sender: Any) {
+        perform(#selector(testSelector))
+    }
+    
+    @objc func testSelector() {
+        print(RunLoop.current.currentMode!)
+    }
+    
+    @IBAction func timerTapped(_ sender: Any) {
+        Timer.scheduledTimer(withTimeInterval: TimeInterval(1), repeats: false){ t in
+            print(RunLoop.current.currentMode!)
+        }
+    }
+    
+    @IBAction func globalQueueTaped(_ sender: Any) {
+        DispatchQueue.global().async {
+        }
     }
     
     func setupRunLoopObserver() {

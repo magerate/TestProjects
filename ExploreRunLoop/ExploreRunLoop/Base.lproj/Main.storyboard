@@ -18,12 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0Y-Uq-sdC">
+                                <rect key="frame" x="133" y="107" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GCD Main"/>
+                                <connections>
+                                    <action selector="gcdMainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvM-cY-x7Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nut-wF-08X">
+                                <rect key="frame" x="123" y="145" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Perform Selector"/>
+                                <connections>
+                                    <action selector="performSelectorTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4y-2j-9MH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sf-Wu-rg4">
+                                <rect key="frame" x="156" y="177" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Timer"/>
+                                <connections>
+                                    <action selector="timerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apP-sM-mnn"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eek-nX-M3R">
-                                <rect key="frame" x="133" y="271" width="69" height="30"/>
+                                <rect key="frame" x="142" y="288" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TableView"/>
                                 <connections>
                                     <segue destination="nuf-Hp-YAw" kind="push" id="JQk-mN-8TI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyo-3W-hml">
+                                <rect key="frame" x="122" y="238" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Global Queue"/>
+                                <connections>
+                                    <action selector="globalQueueTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvx-OF-cwA"/>
                                 </connections>
                             </button>
                         </subviews>

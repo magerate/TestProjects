@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491DE3FD20A1EE1A002EBB3C /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DE3FC20A1EE1A002EBB3C /* CustomViewController.swift */; };
 		49D08FF8208F7D9100985E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D08FF7208F7D9100985E53 /* AppDelegate.swift */; };
 		49D08FFA208F7D9100985E53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D08FF9208F7D9100985E53 /* ViewController.swift */; };
 		49D08FFD208F7D9100985E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D08FFB208F7D9100985E53 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491DE3FC20A1EE1A002EBB3C /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		49D08FF4208F7D9100985E53 /* ExploreRunLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreRunLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D08FF7208F7D9100985E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D08FF9208F7D9100985E53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				49D09000208F7D9400985E53 /* LaunchScreen.storyboard */,
 				49D09003208F7D9400985E53 /* Info.plist */,
 				49D0900B208F890000985E53 /* TableViewController.swift */,
+				491DE3FC20A1EE1A002EBB3C /* CustomViewController.swift */,
 			);
 			path = ExploreRunLoop;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				49D08FFA208F7D9100985E53 /* ViewController.swift in Sources */,
 				49D0900C208F890000985E53 /* TableViewController.swift in Sources */,
 				49D08FF8208F7D9100985E53 /* AppDelegate.swift in Sources */,
+				491DE3FD20A1EE1A002EBB3C /* CustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

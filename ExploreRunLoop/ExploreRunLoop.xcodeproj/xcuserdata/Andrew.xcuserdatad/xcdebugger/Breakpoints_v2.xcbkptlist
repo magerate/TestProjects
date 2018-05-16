@@ -90,7 +90,7 @@
                   moduleName = "ExploreRunLoop"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Andrew/Documents/GitHub/TestProjects/ExploreRunLoop/ExploreRunLoop/ViewController.swift"
-                  timestampString = "547397497.467075"
+                  timestampString = "547483701.916654"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "49"
@@ -105,7 +105,7 @@
                   moduleName = "ExploreRunLoop"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Andrew/Documents/GitHub/TestProjects/ExploreRunLoop/ExploreRunLoop/ViewController.swift"
-                  timestampString = "547397497.4713939"
+                  timestampString = "547483701.920705"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -113,6 +113,22 @@
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExploreRunLoop/CustomViewController.swift"
+            timestampString = "547483708.484428"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "draw(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
